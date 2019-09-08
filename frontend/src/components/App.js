@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
  
  
-class App extends Component {
+export class App extends Component {
  
   state = {
       data: ''
   };
  
     componentDidMount() {
-        fetch("/api")
+        fetch("/api/actor/")
           .then(response => {
           return response.json();
         })
@@ -19,12 +19,10 @@ class App extends Component {
   render(){
  
       return (
-            <p>Jason data = {this.state.data}</p>
+            <p>Jason data = {this.state.data}  test text</p>
       )
   }
 }
  
  
-const wrapper = document.getElementById("app");
-wrapper ? ReactDOM.render(<app>, wrapper) : null;
-</app>
+wrapper ? ReactDOM.render(<App></App>, wrapper) : null;
