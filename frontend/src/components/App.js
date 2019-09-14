@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import Navigation from "./Nav.js";
+import DataProvider from "./dataprovider.js";
+import Table from "./Table.js";
  
  
 class App extends Component {
@@ -7,8 +10,10 @@ class App extends Component {
  
   render(){
  
-      return (
-            <h1> Hello World!</h1>
+      return (<div>
+                <Navigation/>
+               
+              </div>
       )
   }
 }
