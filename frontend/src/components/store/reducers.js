@@ -6,9 +6,15 @@ const initialState = {
   };
 
   function rootReducer(state = initialState, action) {
-    if (action.type === ADD_ARTICLE) {
-      state.articles.push(action.payload);
-    }
+    switch (action) {
+
+
+
+    default:
     return state;
+
+    }
+
+
   }
   export default rootReducer;
